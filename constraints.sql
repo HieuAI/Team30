@@ -1,0 +1,11 @@
+ALTER TABLE Rap
+MODIFY COLUMN MaRap INT AUTO_INCREMENT PRIMARY KEY;
+
+ALTER TABLE Phong
+MODIFY COLUMN MaPhong INT AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE Phong
+ADD CONSTRAINT fk_Phong_Rap FOREIGN KEY (MaRap) REFERENCES Rap(MaRap);
+
+-- Ràng buộc Unique để đảm bảo ghế không trùng lặp trong cùng một suất chiếu
+ALTER TABLE Ve
+ADD CONSTRAINT ve UNIQUE (MaLichChieu, MaGhe);
