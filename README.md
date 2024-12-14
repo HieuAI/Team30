@@ -1,1 +1,1 @@
-# Team30
+# Team30: Quản lý rạp phim
