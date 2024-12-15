@@ -3,16 +3,17 @@ USE CINEMA;
 
 -- Bảng Rạp chiếu
 CREATE TABLE Rap (
-    MaRap INT,
+    MaRap INT PRIMARY KEY AUTO_INCREMENT,
     TenRap VARCHAR(255) NOT NULL,
     KhuVuc VARCHAR(255) NOT NULL
 );
 
 -- Bảng Phòng chiếu
 CREATE TABLE Phong (
-    MaPhong INT,
+    MaPhong INT PRIMARY KEY AUTO_INCREMENT,
     TenPhong VARCHAR(255) NOT NULL,
-    MaRap INT
+    MaRap INT,
+    FOREIGN KEY (MaRap) REFERENCES Rap(MaRap) ON DELETE CASCADE
 );
 
 -- Bảng Phim
@@ -42,6 +43,7 @@ CREATE TABLE Ghe (
     MaPhong INT,
     HangGhe CHAR(1) NOT NULL,
     SoGhe INT NOT NULL, 
+    TrangThai ENUM('ConGhe', 'DaDat') NOT NULL DEFAULT 'ConGhe',
     FOREIGN KEY (MaPhong) REFERENCES Phong(MaPhong)
 );
 
@@ -64,7 +66,6 @@ CREATE TABLE Ve (
     MaGhe INT,
     MaKhachHang INT,
     ThoiGianDatVe DATETIME NOT NULL,
-    TrangThai ENUM('DaDat', 'ConVe','DaSuDung') NOT NULL,
     FOREIGN KEY (MaLichChieu) REFERENCES LichChieu(MaLichChieu),
     FOREIGN KEY (MaGhe) REFERENCES Ghe(MaGhe),
     FOREIGN KEY (MaKhachHang) REFERENCES KhachHang(MaKhachHang)

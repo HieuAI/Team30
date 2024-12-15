@@ -22,12 +22,62 @@ INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VA
 INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (3, 3, '2024-12-22 20:00:00', '2024-12-22 22:35:00', 100000);
 INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (4, 4, '2024-12-23 17:00:00', '2024-12-23 20:01:00', 140000);
 INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (5, 5, '2024-12-24 16:30:00', '2024-12-24 18:13:00', 90000);
+INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (1, 2, '2024-12-21 20:00:00', '2024-12-21 22:42:00', 150000);
+INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (2, 3, '2024-12-22 18:00:00', '2024-12-22 20:20:00', 120000);
+INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (3, 4, '2024-12-23 16:00:00', '2024-12-23 18:35:00', 100000);
+INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (4, 5, '2024-12-24 15:00:00', '2024-12-24 18:01:00', 140000);
+INSERT INTO LichChieu (MaPhim, MaPhong, ThoiGianBatDau, ThoiGianKetThuc, Gia) VALUES (5, 1, '2024-12-20 19:00:00', '2024-12-20 20:43:00', 90000);
 
+-- Thêm 12 ghế cho phòng (4 hàng A, B, C, D, mỗi hàng 3 ghế)
 INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'A', 1);
 INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'A', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'A', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'B', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'B', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'B', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'C', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'C', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'C', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'D', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'D', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (1, 'D', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'A', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'A', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'A', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'B', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'B', 2);
 INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'B', 3);
-INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'C', 4);
-INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'D', 5);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'C', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'C', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'C', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'D', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'D', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (2, 'D', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'A', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'A', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'A', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'B', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'B', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'B', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'C', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'C', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'C', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'D', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'D', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (3, 'D', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'A', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'A', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'A', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'B', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'B', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'B', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'C', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'C', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'C', 3);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'D', 1);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'D', 2);
+INSERT INTO Ghe (MaPhong, HangGhe, SoGhe) VALUES (4, 'D', 3);
+
 
 
 INSERT INTO KhachHang (HoTen, Email, SoDienThoai, DiaChi, NgaySinh, MatKhau, NgayDangKy)
@@ -39,13 +89,13 @@ VALUES
 ('Nguyen Hoang Nam', 'nam.nguyen@hotmail.com', '0901122334', 'Cần Thơ', '1994-09-01', 'nam890', '2024-12-14');
 
 
-INSERT INTO Ve (MaLichChieu, MaGhe, MaKhachHang, ThoiGianDatVe, TrangThai) 
+INSERT INTO Ve (MaLichChieu, MaGhe, MaKhachHang, ThoiGianDatVe) 
 VALUES 
-(1, 1, 1, '2024-12-19 12:00:00', 'DaDat'),
-(2, 2, 2, '2024-12-20 14:00:00', 'DaDat'),
-(3, 3, 3, '2024-12-21 16:00:00', 'ConVe'),
-(4, 4, 4, '2024-12-22 18:00:00', 'ConVe'),
-(5, 5, 5, '2024-12-23 20:00:00', 'DaDat');
+(1, 1, 1, '2024-12-19 12:00:00'),
+(2, 2, 2, '2024-12-20 14:00:00'),
+(3, 3, 3, '2024-12-21 16:00:00'),
+(4, 4, 4, '2024-12-22 18:00:00'),
+(5, 5, 5, '2024-12-23 20:00:00');
 
 INSERT INTO NhanVien (HoTen, Email, SoDienThoai, ChucVu, Luong, MaRap, NgayVaoLam) 
 VALUES 
