@@ -32,7 +32,7 @@ FROM KhachHang;
 
 
 -- Truy vấn sử dụng GROUP BY và hàm tổng hợp: Tổng số vé bán được cho mỗi phim
-SELECT Phim.TenPhim, COUNT(Ve.MaVe) AS TotalTickets
+SELECT Phim.TenPhim, COUNT(Ve.MaVe) AS TongVeDaBan
 FROM Phim
 JOIN LichChieu ON Phim.MaPhim = LichChieu.MaPhim
 JOIN Ve ON LichChieu.MaLichChieu = Ve.MaLichChieu
