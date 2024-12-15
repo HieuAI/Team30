@@ -3,7 +3,7 @@ USE CINEMA;
 
 -- Bảng Rạp chiếu
 CREATE TABLE Rap (
-    MaRap INT PRIMARY KEY AUTO_INCREMENT,
+    MaRap INT,
     TenRap VARCHAR(255) NOT NULL,
     KhuVuc VARCHAR(255) NOT NULL
 );
@@ -12,8 +12,7 @@ CREATE TABLE Rap (
 CREATE TABLE Phong (
     MaPhong INT PRIMARY KEY AUTO_INCREMENT,
     TenPhong VARCHAR(255) NOT NULL,
-    MaRap INT,
-    FOREIGN KEY (MaRap) REFERENCES Rap(MaRap) ON DELETE CASCADE
+    MaRap INT
 );
 
 -- Bảng Phim
@@ -80,8 +79,7 @@ CREATE TABLE NhanVien (
     ChucVu ENUM('QuanLy', 'ThuNgan', 'KyThuatVien', 'VeSinh') NOT NULL,
     Luong DECIMAL(10, 2) NOT NULL,
     MaRap INT,
-    NgayVaoLam DATE NOT NULL,
-    FOREIGN KEY (MaRap) REFERENCES Rap(MaRap)
+    NgayVaoLam DATE NOT NULL
 );
 
 -- Bảng Ca làm việc
@@ -90,7 +88,6 @@ CREATE TABLE CaLamViec (
     MaNhanVien INT,
     NgayLam DATE NOT NULL,
     ThoiGianBatDau TIME NOT NULL,
-    ThoiGianKetThuc TIME NOT NULL,
-    FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien)
+    ThoiGianKetThuc TIME NOT NULL
 );
 
