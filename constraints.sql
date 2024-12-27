@@ -15,6 +15,3 @@ ALTER TABLE CaLamViec
 ALTER TABLE Ve
 ADD CONSTRAINT ve UNIQUE (MaLichChieu, MaGhe);
 
--- Ràng buộc tạo giao dịch
-ALTER TABLE Ve ENGINE = InnoDB;
-
