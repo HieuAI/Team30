@@ -88,7 +88,7 @@ VALUES
 ('Le Minh Tuan', 'minhtuan.le@gmail.com', '0912345678', 'Hồ Chí Minh', '1990-05-15', 'tuan1234', '2024-12-14'),
 ('Tran Thanh Son', 'son.tran@gmail.com', '0922334455', 'Đà Nẵng', '1988-11-20', 'son12345', '2024-12-14'),
 ('Phan Thi Thanh', 'thanh.phan@yahoo.com', '0933445566', 'Hải Phòng', '1997-07-09', 'thanh5678', '2024-12-14'),
-('Nguyen Hoang Nam', 'nam.nguyen@hotmail.com', '0901122334', 'Cần Thơ', '1994-09-01', 'nam890', '2024-12-14');
+('Nguyen Hoang Nam', 'nam.nguyen@gmail.com', '0901122334', 'Cần Thơ', '1994-09-01', 'nam890', '2024-12-14');
 
 -- Thêm dữ liệu Vé
 INSERT INTO Ve (MaLichChieu, MaGhe, MaKhachHang, ThoiGianDatVe) 
@@ -102,11 +102,11 @@ VALUES
 -- Thêm dữ liệu Nhân viên
 INSERT INTO NhanVien (HoTen, Email, SoDienThoai, ChucVu, Luong, MaRap, NgayVaoLam) 
 VALUES 
-('Nguyễn Minh A', 'a.nv@example.com', '0976543210', 'ThuNgan', 8000000, 1, '2024-01-01'),
-('Trần Thanh B', 'b.nv@example.com', '0987654321', 'QuanLy', 15000000, 2, '2024-01-02'),
-('Lê Công C', 'c.nv@example.com', '0998765432', 'KyThuatVien', 10000000, 3, '2024-01-03'),
-('Phan Minh D', 'd.nv@example.com', '0912345678', 'ThuNgan', 8500000, 4, '2024-01-04'),
-('Vũ Thiên E', 'e.nv@example.com', '0909876543', 'VeSinh', 7000000, 5, '2024-01-05');
+('Nguyễn Minh Anh', 'minhanh@gmail.com', '0976543210', 'ThuNgan', 8000000, 1, '2024-01-01'),
+('Trần Thanh Bình', 'tranbinh@gmail.com', '0987654321', 'QuanLy', 15000000, 2, '2024-01-02'),
+('Lê Công Minh', 'lecongming2206@gmail.com', '0998765432', 'KyThuatVien', 10000000, 3, '2024-01-03'),
+('Phan Minh Đạt', 'phandat110599@gmail.com', '0912345678', 'ThuNgan', 8500000, 4, '2024-01-04'),
+('Vũ Thiên An', 'thienan1508@gmail.com', '0909876543', 'VeSinh', 7000000, 5, '2024-01-05');
 
 -- Thêm dữ liệu Ca làm việc
 INSERT INTO CaLamViec (MaNhanVien, NgayLam, ThoiGianBatDau, ThoiGianKetThuc) 
