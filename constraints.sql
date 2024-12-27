@@ -14,3 +14,7 @@ ALTER TABLE CaLamViec
 -- Ràng buộc Unique để đảm bảo ghế không trùng lặp trong cùng một suất chiếu
 ALTER TABLE Ve
 ADD CONSTRAINT ve UNIQUE (MaLichChieu, MaGhe);
+
+-- Ràng buộc tạo giao dịch
+ALTER TABLE Ve ENGINE = InnoDB;
+
